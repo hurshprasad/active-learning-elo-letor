@@ -1,0 +1,1029 @@
+## MART
+## No. of trees = 1000
+## No. of leaves = 10
+## No. of threshold candidates = 256
+## Learning rate = 0.1
+## Stop early = 100
+
+<ensemble>
+	<tree id="1" weight="0.1">
+		<split>
+			<feature> 39 </feature>
+			<threshold> 0.74609375 </threshold>
+			<split pos="left">
+				<feature> 23 </feature>
+				<threshold> 0.5859375 </threshold>
+				<split pos="left">
+					<feature> 40 </feature>
+					<threshold> 0.4609375 </threshold>
+					<split pos="left">
+						<output> 0.046875 </output>
+					</split>
+					<split pos="right">
+						<output> 0.1445055 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 19 </feature>
+					<threshold> 0.1328125 </threshold>
+					<split pos="left">
+						<output> 0.3813084 </output>
+					</split>
+					<split pos="right">
+						<output> 0.23682362 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 31 </feature>
+				<threshold> 0.41015625 </threshold>
+				<split pos="left">
+					<feature> 25 </feature>
+					<threshold> 0.3671875 </threshold>
+					<split pos="left">
+						<feature> 37 </feature>
+						<threshold> 0.75390625 </threshold>
+						<split pos="left">
+							<output> 0.30816078 </output>
+						</split>
+						<split pos="right">
+							<feature> 20 </feature>
+							<threshold> 0.015625 </threshold>
+							<split pos="left">
+								<output> 0.248 </output>
+							</split>
+							<split pos="right">
+								<output> 0.52217454 </output>
+							</split>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.6137441 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 16 </feature>
+					<threshold> 0.01171875 </threshold>
+					<split pos="left">
+						<output> 0.5508021 </output>
+					</split>
+					<split pos="right">
+						<output> 0.8817204 </output>
+					</split>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="2" weight="0.1">
+		<split>
+			<feature> 39 </feature>
+			<threshold> 0.74609375 </threshold>
+			<split pos="left">
+				<feature> 23 </feature>
+				<threshold> 0.5859375 </threshold>
+				<split pos="left">
+					<feature> 38 </feature>
+					<threshold> 0.8046875 </threshold>
+					<split pos="left">
+						<output> 0.06533574 </output>
+					</split>
+					<split pos="right">
+						<output> 0.25872064 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 17 </feature>
+					<threshold> 0.01953125 </threshold>
+					<split pos="left">
+						<output> 0.37652835 </output>
+					</split>
+					<split pos="right">
+						<output> 0.21758208 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 31 </feature>
+				<threshold> 0.41015625 </threshold>
+				<split pos="left">
+					<feature> 25 </feature>
+					<threshold> 0.703125 </threshold>
+					<split pos="left">
+						<feature> 37 </feature>
+						<threshold> 0.75390625 </threshold>
+						<split pos="left">
+							<output> 0.27659217 </output>
+						</split>
+						<split pos="right">
+							<feature> 1 </feature>
+							<threshold> 0.03515625 </threshold>
+							<split pos="left">
+								<output> 0.22168969 </output>
+							</split>
+							<split pos="right">
+								<feature> 18 </feature>
+								<threshold> 0.19140625 </threshold>
+								<split pos="left">
+									<output> 0.57865804 </output>
+								</split>
+								<split pos="right">
+									<output> 0.39582783 </output>
+								</split>
+							</split>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.64928687 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 0.7081316 </output>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="3" weight="0.1">
+		<split>
+			<feature> 23 </feature>
+			<threshold> 0.6953125 </threshold>
+			<split pos="left">
+				<feature> 40 </feature>
+				<threshold> 0.4921875 </threshold>
+				<split pos="left">
+					<output> 0.043753285 </output>
+				</split>
+				<split pos="right">
+					<feature> 17 </feature>
+					<threshold> 0.01953125 </threshold>
+					<split pos="left">
+						<output> 0.2663141 </output>
+					</split>
+					<split pos="right">
+						<feature> 37 </feature>
+						<threshold> 0.51171875 </threshold>
+						<split pos="left">
+							<output> 0.062579535 </output>
+						</split>
+						<split pos="right">
+							<output> 0.17904511 </output>
+						</split>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 31 </feature>
+				<threshold> 0.41015625 </threshold>
+				<split pos="left">
+					<feature> 23 </feature>
+					<threshold> 0.86328125 </threshold>
+					<split pos="left">
+						<feature> 1 </feature>
+						<threshold> 0.08203125 </threshold>
+						<split pos="left">
+							<output> 0.19716948 </output>
+						</split>
+						<split pos="right">
+							<output> 0.32348055 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<feature> 25 </feature>
+						<threshold> 0.37109375 </threshold>
+						<split pos="left">
+							<output> 0.36720097 </output>
+						</split>
+						<split pos="right">
+							<output> 0.619416 </output>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 40 </feature>
+					<threshold> 0.8828125 </threshold>
+					<split pos="left">
+						<output> 0.49792194 </output>
+					</split>
+					<split pos="right">
+						<output> 0.7927134 </output>
+					</split>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="4" weight="0.1">
+		<split>
+			<feature> 39 </feature>
+			<threshold> 0.75390625 </threshold>
+			<split pos="left">
+				<feature> 23 </feature>
+				<threshold> 0.5859375 </threshold>
+				<split pos="left">
+					<feature> 39 </feature>
+					<threshold> 0.37109375 </threshold>
+					<split pos="left">
+						<output> 0.02562918 </output>
+					</split>
+					<split pos="right">
+						<output> 0.10304256 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 29 </feature>
+					<threshold> 0.6015625 </threshold>
+					<split pos="left">
+						<feature> 19 </feature>
+						<threshold> 0.16796875 </threshold>
+						<split pos="left">
+							<output> 0.2616073 </output>
+						</split>
+						<split pos="right">
+							<output> 0.1386521 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.3632992 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 25 </feature>
+				<threshold> 0.71875 </threshold>
+				<split pos="left">
+					<feature> 21 </feature>
+					<threshold> 0.87109375 </threshold>
+					<split pos="left">
+						<feature> 5 </feature>
+						<threshold> 0.12890625 </threshold>
+						<split pos="left">
+							<output> 0.19198225 </output>
+						</split>
+						<split pos="right">
+							<output> 0.31020683 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<feature> 31 </feature>
+						<threshold> 0.328125 </threshold>
+						<split pos="left">
+							<output> 0.37000152 </output>
+						</split>
+						<split pos="right">
+							<output> 0.61536604 </output>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 0.66773933 </output>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="5" weight="0.1">
+		<split>
+			<feature> 23 </feature>
+			<threshold> 0.6953125 </threshold>
+			<split pos="left">
+				<feature> 39 </feature>
+				<threshold> 0.5 </threshold>
+				<split pos="left">
+					<output> 0.040116966 </output>
+				</split>
+				<split pos="right">
+					<feature> 44 </feature>
+					<threshold> 0.1796875 </threshold>
+					<split pos="left">
+						<feature> 19 </feature>
+						<threshold> 0.23046875 </threshold>
+						<split pos="left">
+							<output> 0.1795664 </output>
+						</split>
+						<split pos="right">
+							<output> 0.0779875 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.26958576 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 32 </feature>
+				<threshold> 0.1640625 </threshold>
+				<split pos="left">
+					<feature> 25 </feature>
+					<threshold> 0.2109375 </threshold>
+					<split pos="left">
+						<feature> 24 </feature>
+						<threshold> 0.8828125 </threshold>
+						<split pos="left">
+							<feature> 1 </feature>
+							<threshold> 0.08203125 </threshold>
+							<split pos="left">
+								<output> 0.085609965 </output>
+							</split>
+							<split pos="right">
+								<output> 0.23828575 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<output> 0.31476283 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.37643257 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 16 </feature>
+					<threshold> 0.01171875 </threshold>
+					<split pos="left">
+						<output> 0.28426734 </output>
+					</split>
+					<split pos="right">
+						<output> 0.5661037 </output>
+					</split>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="6" weight="0.1">
+		<split>
+			<feature> 39 </feature>
+			<threshold> 0.76953125 </threshold>
+			<split pos="left">
+				<feature> 23 </feature>
+				<threshold> 0.5859375 </threshold>
+				<split pos="left">
+					<feature> 38 </feature>
+					<threshold> 0.8046875 </threshold>
+					<split pos="left">
+						<output> 0.03940643 </output>
+					</split>
+					<split pos="right">
+						<output> 0.19173971 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 17 </feature>
+					<threshold> 0.01953125 </threshold>
+					<split pos="left">
+						<output> 0.2690758 </output>
+					</split>
+					<split pos="right">
+						<feature> 29 </feature>
+						<threshold> 0.57421875 </threshold>
+						<split pos="left">
+							<output> 0.121388234 </output>
+						</split>
+						<split pos="right">
+							<output> 0.28573805 </output>
+						</split>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 25 </feature>
+				<threshold> 0.71875 </threshold>
+				<split pos="left">
+					<feature> 21 </feature>
+					<threshold> 0.875 </threshold>
+					<split pos="left">
+						<feature> 45 </feature>
+						<threshold> 0.0078125 </threshold>
+						<split pos="left">
+							<output> 0.14582784 </output>
+						</split>
+						<split pos="right">
+							<output> 0.26223558 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<feature> 16 </feature>
+						<threshold> 0.01171875 </threshold>
+						<split pos="left">
+							<output> 0.18683663 </output>
+						</split>
+						<split pos="right">
+							<output> 0.4259861 </output>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 0.5680752 </output>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="7" weight="0.1">
+		<split>
+			<feature> 39 </feature>
+			<threshold> 0.76953125 </threshold>
+			<split pos="left">
+				<feature> 23 </feature>
+				<threshold> 0.5859375 </threshold>
+				<split pos="left">
+					<feature> 39 </feature>
+					<threshold> 0.37109375 </threshold>
+					<split pos="left">
+						<output> 0.014901482 </output>
+					</split>
+					<split pos="right">
+						<output> 0.07820921 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 16 </feature>
+					<threshold> 0.00390625 </threshold>
+					<split pos="left">
+						<output> 0.02102603 </output>
+					</split>
+					<split pos="right">
+						<feature> 25 </feature>
+						<threshold> 0.46484375 </threshold>
+						<split pos="left">
+							<feature> 17 </feature>
+							<threshold> 0.01953125 </threshold>
+							<split pos="left">
+								<output> 0.273929 </output>
+							</split>
+							<split pos="right">
+								<output> 0.114763595 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<output> 0.3221898 </output>
+						</split>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 29 </feature>
+				<threshold> 0.9296875 </threshold>
+				<split pos="left">
+					<feature> 27 </feature>
+					<threshold> 0.0 </threshold>
+					<split pos="left">
+						<feature> 21 </feature>
+						<threshold> 0.875 </threshold>
+						<split pos="left">
+							<output> 0.15793101 </output>
+						</split>
+						<split pos="right">
+							<output> 0.28720072 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.37329698 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 0.59663117 </output>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="8" weight="0.1">
+		<split>
+			<feature> 23 </feature>
+			<threshold> 0.6953125 </threshold>
+			<split pos="left">
+				<feature> 40 </feature>
+				<threshold> 0.4921875 </threshold>
+				<split pos="left">
+					<output> 0.020716624 </output>
+				</split>
+				<split pos="right">
+					<feature> 17 </feature>
+					<threshold> 0.01953125 </threshold>
+					<split pos="left">
+						<output> 0.18673651 </output>
+					</split>
+					<split pos="right">
+						<output> 0.08096774 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 31 </feature>
+				<threshold> 0.6015625 </threshold>
+				<split pos="left">
+					<feature> 20 </feature>
+					<threshold> 0.01171875 </threshold>
+					<split pos="left">
+						<output> 0.051929466 </output>
+					</split>
+					<split pos="right">
+						<feature> 37 </feature>
+						<threshold> 0.76953125 </threshold>
+						<split pos="left">
+							<feature> 44 </feature>
+							<threshold> 0.0078125 </threshold>
+							<split pos="left">
+								<output> 0.100013934 </output>
+							</split>
+							<split pos="right">
+								<output> 0.21506308 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<feature> 5 </feature>
+							<threshold> 0.02734375 </threshold>
+							<split pos="left">
+								<output> 0.048078068 </output>
+							</split>
+							<split pos="right">
+								<feature> 42 </feature>
+								<threshold> 0.21484375 </threshold>
+								<split pos="left">
+									<output> 0.42249045 </output>
+								</split>
+								<split pos="right">
+									<output> 0.26042855 </output>
+								</split>
+							</split>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 0.41693693 </output>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="9" weight="0.1">
+		<split>
+			<feature> 40 </feature>
+			<threshold> 0.6640625 </threshold>
+			<split pos="left">
+				<feature> 23 </feature>
+				<threshold> 0.54296875 </threshold>
+				<split pos="left">
+					<output> 0.01863169 </output>
+				</split>
+				<split pos="right">
+					<output> 0.09718422 </output>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 25 </feature>
+				<threshold> 0.2109375 </threshold>
+				<split pos="left">
+					<feature> 23 </feature>
+					<threshold> 0.83984375 </threshold>
+					<split pos="left">
+						<feature> 15 </feature>
+						<threshold> 0.97265625 </threshold>
+						<split pos="left">
+							<feature> 32 </feature>
+							<threshold> 0.59375 </threshold>
+							<split pos="left">
+								<output> 0.09701028 </output>
+							</split>
+							<split pos="right">
+								<output> 0.22326082 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<output> -0.113706395 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<feature> 17 </feature>
+						<threshold> 0.21484375 </threshold>
+						<split pos="left">
+							<output> 0.16970147 </output>
+						</split>
+						<split pos="right">
+							<output> 0.33057183 </output>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 16 </feature>
+					<threshold> 0.0078125 </threshold>
+					<split pos="left">
+						<output> 0.106990114 </output>
+					</split>
+					<split pos="right">
+						<feature> 25 </feature>
+						<threshold> 0.71875 </threshold>
+						<split pos="left">
+							<output> 0.28922504 </output>
+						</split>
+						<split pos="right">
+							<output> 0.48734146 </output>
+						</split>
+					</split>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="10" weight="0.1">
+		<split>
+			<feature> 23 </feature>
+			<threshold> 0.765625 </threshold>
+			<split pos="left">
+				<feature> 23 </feature>
+				<threshold> 0.5859375 </threshold>
+				<split pos="left">
+					<feature> 37 </feature>
+					<threshold> 0.67578125 </threshold>
+					<split pos="left">
+						<output> 0.018591594 </output>
+					</split>
+					<split pos="right">
+						<output> 0.09248912 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 20 </feature>
+					<threshold> 0.00390625 </threshold>
+					<split pos="left">
+						<output> -0.012588588 </output>
+					</split>
+					<split pos="right">
+						<feature> 29 </feature>
+						<threshold> 0.58984375 </threshold>
+						<split pos="left">
+							<feature> 17 </feature>
+							<threshold> 0.01953125 </threshold>
+							<split pos="left">
+								<output> 0.21985108 </output>
+							</split>
+							<split pos="right">
+								<output> 0.08122425 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<output> 0.26940936 </output>
+						</split>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 25 </feature>
+				<threshold> 0.71875 </threshold>
+				<split pos="left">
+					<feature> 40 </feature>
+					<threshold> 0.875 </threshold>
+					<split pos="left">
+						<feature> 1 </feature>
+						<threshold> 0.16015625 </threshold>
+						<split pos="left">
+							<output> 0.053886168 </output>
+						</split>
+						<split pos="right">
+							<output> 0.2029999 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.25705886 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 0.42725047 </output>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="11" weight="0.1">
+		<split>
+			<feature> 40 </feature>
+			<threshold> 0.6796875 </threshold>
+			<split pos="left">
+				<feature> 39 </feature>
+				<threshold> 0.41796875 </threshold>
+				<split pos="left">
+					<output> 0.006524921 </output>
+				</split>
+				<split pos="right">
+					<feature> 41 </feature>
+					<threshold> 0.4 </threshold>
+					<split pos="left">
+						<output> 0.10749855 </output>
+					</split>
+					<split pos="right">
+						<output> 0.016763201 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 5 </feature>
+				<threshold> 0.0703125 </threshold>
+				<split pos="left">
+					<feature> 40 </feature>
+					<threshold> 0.87890625 </threshold>
+					<split pos="left">
+						<output> 0.06246985 </output>
+					</split>
+					<split pos="right">
+						<output> 0.17840186 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 26 </feature>
+					<threshold> 0.1171875 </threshold>
+					<split pos="left">
+						<feature> 37 </feature>
+						<threshold> 0.4921875 </threshold>
+						<split pos="left">
+							<output> 0.018373998 </output>
+						</split>
+						<split pos="right">
+							<feature> 15 </feature>
+							<threshold> 0.0 </threshold>
+							<split pos="left">
+								<output> 1.2749627 </output>
+							</split>
+							<split pos="right">
+								<feature> 35 </feature>
+								<threshold> 0.08984375 </threshold>
+								<split pos="left">
+									<output> 0.1700893 </output>
+								</split>
+								<split pos="right">
+									<output> 0.36171573 </output>
+								</split>
+							</split>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.40310058 </output>
+					</split>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="12" weight="0.1">
+		<split>
+			<feature> 40 </feature>
+			<threshold> 0.6640625 </threshold>
+			<split pos="left">
+				<feature> 16 </feature>
+				<threshold> 0.01171875 </threshold>
+				<split pos="left">
+					<output> -0.004946463 </output>
+				</split>
+				<split pos="right">
+					<feature> 37 </feature>
+					<threshold> 0.55859375 </threshold>
+					<split pos="left">
+						<output> 0.03248764 </output>
+					</split>
+					<split pos="right">
+						<output> 0.11642292 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 31 </feature>
+				<threshold> 0.359375 </threshold>
+				<split pos="left">
+					<feature> 23 </feature>
+					<threshold> 0.86328125 </threshold>
+					<split pos="left">
+						<feature> 19 </feature>
+						<threshold> 0.1796875 </threshold>
+						<split pos="left">
+							<output> 0.137786 </output>
+						</split>
+						<split pos="right">
+							<output> 0.040330302 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<feature> 17 </feature>
+						<threshold> 0.23046875 </threshold>
+						<split pos="left">
+							<output> 0.11045302 </output>
+						</split>
+						<split pos="right">
+							<output> 0.2771239 </output>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 16 </feature>
+					<threshold> 0.01171875 </threshold>
+					<split pos="left">
+						<output> 0.12413885 </output>
+					</split>
+					<split pos="right">
+						<feature> 26 </feature>
+						<threshold> 0.765625 </threshold>
+						<split pos="left">
+							<output> 0.2598855 </output>
+						</split>
+						<split pos="right">
+							<output> 0.5145919 </output>
+						</split>
+					</split>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="13" weight="0.1">
+		<split>
+			<feature> 23 </feature>
+			<threshold> 0.6015625 </threshold>
+			<split pos="left">
+				<feature> 38 </feature>
+				<threshold> 0.7890625 </threshold>
+				<split pos="left">
+					<output> 0.015722523 </output>
+				</split>
+				<split pos="right">
+					<output> 0.10967647 </output>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 29 </feature>
+				<threshold> 0.890625 </threshold>
+				<split pos="left">
+					<feature> 16 </feature>
+					<threshold> 0.01171875 </threshold>
+					<split pos="left">
+						<output> 0.011369637 </output>
+					</split>
+					<split pos="right">
+						<feature> 25 </feature>
+						<threshold> 0.1796875 </threshold>
+						<split pos="left">
+							<feature> 40 </feature>
+							<threshold> 0.87890625 </threshold>
+							<split pos="left">
+								<feature> 1 </feature>
+								<threshold> 0.0078125 </threshold>
+								<split pos="left">
+									<output> 0.5217414 </output>
+								</split>
+								<split pos="right">
+									<feature> 40 </feature>
+									<threshold> 0.1484375 </threshold>
+									<split pos="left">
+										<output> 0.89253086 </output>
+									</split>
+									<split pos="right">
+										<feature> 44 </feature>
+										<threshold> 0.0078125 </threshold>
+										<split pos="left">
+											<output> 0.031827778 </output>
+										</split>
+										<split pos="right">
+											<output> 0.11587627 </output>
+										</split>
+									</split>
+								</split>
+							</split>
+							<split pos="right">
+								<output> 0.20397301 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<output> 0.2390186 </output>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 0.3076857 </output>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="14" weight="0.1">
+		<split>
+			<feature> 24 </feature>
+			<threshold> 0.6796875 </threshold>
+			<split pos="left">
+				<feature> 20 </feature>
+				<threshold> 0.00390625 </threshold>
+				<split pos="left">
+					<output> -0.016280588 </output>
+				</split>
+				<split pos="right">
+					<feature> 40 </feature>
+					<threshold> 0.7890625 </threshold>
+					<split pos="left">
+						<feature> 34 </feature>
+						<threshold> 0.64453125 </threshold>
+						<split pos="left">
+							<feature> 44 </feature>
+							<threshold> 0.02734375 </threshold>
+							<split pos="left">
+								<output> 0.013100616 </output>
+							</split>
+							<split pos="right">
+								<output> 0.0750391 </output>
+							</split>
+						</split>
+						<split pos="right">
+							<output> 0.1914943 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.7125382 </output>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 5 </feature>
+				<threshold> 0.0703125 </threshold>
+				<split pos="left">
+					<feature> 45 </feature>
+					<threshold> 0.015625 </threshold>
+					<split pos="left">
+						<output> 0.034232967 </output>
+					</split>
+					<split pos="right">
+						<output> 0.13196516 </output>
+					</split>
+				</split>
+				<split pos="right">
+					<feature> 27 </feature>
+					<threshold> 0.0234375 </threshold>
+					<split pos="left">
+						<feature> 36 </feature>
+						<threshold> 0.13671875 </threshold>
+						<split pos="left">
+							<output> 0.107296064 </output>
+						</split>
+						<split pos="right">
+							<output> 0.33867422 </output>
+						</split>
+					</split>
+					<split pos="right">
+						<output> 0.3155884 </output>
+					</split>
+				</split>
+			</split>
+		</split>
+	</tree>
+	<tree id="15" weight="0.1">
+		<split>
+			<feature> 23 </feature>
+			<threshold> 0.765625 </threshold>
+			<split pos="left">
+				<feature> 39 </feature>
+				<threshold> 0.3671875 </threshold>
+				<split pos="left">
+					<output> -1.9517026E-4 </output>
+				</split>
+				<split pos="right">
+					<feature> 17 </feature>
+					<threshold> 0.01953125 </threshold>
+					<split pos="left">
+						<output> 0.1162112 </output>
+					</split>
+					<split pos="right">
+						<feature> 44 </feature>
+						<threshold> 0.0078125 </threshold>
+						<split pos="left">
+							<output> 0.00516647 </output>
+						</split>
+						<split pos="right">
+							<output> 0.067882925 </output>
+						</split>
+					</split>
+				</split>
+			</split>
+			<split pos="right">
+				<feature> 29 </feature>
+				<threshold> 0.9296875 </threshold>
+				<split pos="left">
+					<feature> 16 </feature>
+					<threshold> 0.0078125 </threshold>
+					<split pos="left">
+						<output> -0.08457054 </output>
+					</split>
+					<split pos="right">
+						<feature> 37 </feature>
+						<threshold> 0.75390625 </threshold>
+						<split pos="left">
+							<output> 0.04694513 </output>
+						</split>
+						<split pos="right">
+							<feature> 41 </feature>
+							<threshold> 0.875 </threshold>
+							<split pos="left">
+								<feature> 24 </feature>
+								<threshold> 0.8828125 </threshold>
+								<split pos="left">
+									<output> 0.12689775 </output>
+								</split>
+								<split pos="right">
+									<output> 0.27654195 </output>
+								</split>
+							</split>
+							<split pos="right">
+								<output> -0.12028803 </output>
+							</split>
+						</split>
+					</split>
+				</split>
+				<split pos="right">
+					<output> 0.35993803 </output>
+				</split>
+			</split>
+		</split>
+	</tree>
+</ensemble>
