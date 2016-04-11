@@ -3,9 +3,13 @@ import util
 import math
 import numpy as np
 
+__author__ = 'hurshprasad'
+
 # normalize each feature set
 def normalize(row):
     s = math.sqrt(reduce(lambda x,y: x + y*y,row))
+    if s == 0.0:
+        print "wtf"
     return map(lambda x : x/s, row)
 
 # read training data
@@ -25,22 +29,23 @@ def read_train_data(file):
         for value in values[2:-9]:
                 temp.append(float(value.split(":")[1]))
 
-        X.append(normalize(temp))
-        tempY = []
+        if sum(temp) > 1.0:
+            X.append(normalize(temp))
+            tempY = []
 
-        for value in values[0:2]:
-            if value.__contains__(":"):
-                tempY.append(value.split(":")[1])
-            else:
-                tempY.append(value)
+            for value in values[0:2]:
+                if value.__contains__(":"):
+                    tempY.append(value.split(":")[1])
+                else:
+                    tempY.append(value)
 
-        Y.append(tempY)
-        docs.append(values[50])
+            Y.append(tempY)
+            docs.append(values[50])
 
     Y = np.asarray(Y)
     Q = np.unique(Y[:, 1], return_index=False)
 
-    return np.array(X), np.array(Y), Q, docs
+    return np.array(X), np.array(Y), np.array(Q), np.array(docs)
 
 def read_test_data(file):
     return None
@@ -73,13 +78,27 @@ def main():
     four = X[four]
     eight = X[eight]
 
+    Y = Y[AL]
+    D = D[AL]
+
     AL = X[AL]
 
+    # save BASE set
     util.save_pickle(CONST.DATASET_PATH + CONST.BASE2K_PATH, two)
     util.save_pickle(CONST.DATASET_PATH + CONST.BASE4K_PATH, four)
     util.save_pickle(CONST.DATASET_PATH + CONST.BASE8K_PATH, eight)
 
+    # save AL, U set
     util.save_pickle(CONST.DATASET_PATH + CONST.ACTIVETRAING_PATH, AL)
+
+    # SAVE Y
+    util.save_pickle(CONST.DATASET_PATH + CONST.ACTIVELEARNING_Y_PATH, Y)
+
+    # SAVE Q
+    util.save_pickle(CONST.DATASET_PATH + CONST.ACTIVELEARNING_Q_PATH, Q)
+
+    # SAVE DOCS
+    util.save_pickle(CONST.DATASET_PATH + CONST.ACTIVELEARNING_DOCNAMES_PATH, D)
 
 if __name__ == "__main__":
     main()

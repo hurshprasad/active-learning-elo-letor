@@ -2,3 +2,4 @@
 *.pyc
 .DS_Store
 *.pickle
+data/MQ2016/active_learning/*.txt
