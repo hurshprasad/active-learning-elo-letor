@@ -39,7 +39,7 @@ Learning to Rank  (LETOR)
 
 	.  
 	├── data 
-	|	 ├── MQ2016AL  
+	|	 ├── MQ2016  
 	|	 │   ├── S1.txt
 	|	 │   ├── S2.txt
 	|	 │   ├── S3.txt
