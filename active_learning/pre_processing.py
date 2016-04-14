@@ -47,7 +47,7 @@ def read_train_data(file):
     return np.array(X), np.array(Y), np.array(Q), np.array(docs)
 
 def read_test_data(file):
-    return None
+    return read_train_data(file)
 
 def main():
     # read the configuration file
