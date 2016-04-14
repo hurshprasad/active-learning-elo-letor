@@ -45,7 +45,7 @@ class _Const(object):
         return "pre_processed/base8k"
 
     @constant
-    def ACTIVETRAING_PATH():
+    def ACTIVETRAING_U_PATH():
         return "pre_processed/AL"
 
     @constant
@@ -60,12 +60,13 @@ class _Const(object):
     def ACTIVELEARNING_DOCNAMES_PATH():
         return "pre_processed/al_doc"
 
-    # 208869 data/MQ2016/active_learning/train.txt
+    # 208869 Total Examples in data/MQ2016/active_learning/train.txt
     #
     # 160,000 for AL ~ U
     #   2,000 BASE 2K
     #   4,000 BASE 4K
     #   8,000 BASE 8K
+    # ---------------
     # 174,000 TOTAL
     @constant
     def NUM_TRAINING_EXAMPLES():
@@ -76,7 +77,24 @@ class _Const(object):
         return 160000
 
     @constant
+    def SATURATION_MAX():
+        return 65536
+
+    @constant
+    def SATURATION_EPSILON():
+        return 0.5
+
+    @constant
     def RANK_INDEX_BM25():
-        return 0
+        return 0  # https://github.com/verayan/LETOR/blob/master/Readme_TREC_dataset.pdf
+
+    @constant
+    def LEARNERS_N():
+        return {50,
+                100}  # estimator hyper_param for gradient boosting decision tree
+
+    @constant
+    def M():
+        return 500  # Number of top examples to move from U to L, if possible
 
 CONST = _Const()

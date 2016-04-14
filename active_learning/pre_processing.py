@@ -8,8 +8,7 @@ __author__ = 'hurshprasad'
 # normalize each feature set
 def normalize(row):
     s = math.sqrt(reduce(lambda x,y: x + y*y,row))
-    if s == 0.0:
-        print "wtf"
+    assert s != 0.0, "S can not be 0"
     return map(lambda x : x/s, row)
 
 # read training data
@@ -31,19 +30,19 @@ def read_train_data(file):
 
         if sum(temp) > 1.0:
             X.append(normalize(temp))
-            tempY = []
+            tempy = []
 
             for value in values[0:2]:
                 if value.__contains__(":"):
-                    tempY.append(value.split(":")[1])
+                    tempy.append(value.split(":")[1])
                 else:
-                    tempY.append(value)
+                    tempy.append(value)
 
-            Y.append(tempY)
+            Y.append(tempy)
             docs.append(values[50])
 
-    Y = np.asarray(Y)
-    Q = np.unique(Y[:, 1], return_index=False)
+    tempy = np.asarray(Y)
+    Q = np.unique(tempy[:, 1], return_index=False)
 
     return np.array(X), np.array(Y), np.array(Q), np.array(docs)
 
@@ -74,22 +73,34 @@ def main():
     # chose per N for U
     AL = np.random.choice(indices, CONST.NUM_ACTIVETRAINING_EXAMPLES)
 
+    # get labels for L base set
+    two_y = Y[two]
+    four_y = Y[four]
+    eight_y = Y[eight]
+
+    # base set L examples
     two = X[two]
     four = X[four]
     eight = X[eight]
-
-    Y = Y[AL]
-    D = D[AL]
-
-    AL = X[AL]
 
     # save BASE set
     util.save_pickle(CONST.DATASET_PATH + CONST.BASE2K_PATH, two)
     util.save_pickle(CONST.DATASET_PATH + CONST.BASE4K_PATH, four)
     util.save_pickle(CONST.DATASET_PATH + CONST.BASE8K_PATH, eight)
 
+    # save BASE Y set
+    util.save_pickle(CONST.DATASET_PATH + CONST.BASE2K_PATH + '_y', two_y)
+    util.save_pickle(CONST.DATASET_PATH + CONST.BASE4K_PATH + '_y', four_y)
+    util.save_pickle(CONST.DATASET_PATH + CONST.BASE8K_PATH + '_y', eight_y)
+
+    # U set
+    Y = Y[AL]
+    D = D[AL]
+
+    AL = X[AL]
+
     # save AL, U set
-    util.save_pickle(CONST.DATASET_PATH + CONST.ACTIVETRAING_PATH, AL)
+    util.save_pickle(CONST.DATASET_PATH + CONST.ACTIVETRAING_U_PATH, AL)
 
     # SAVE Y
     util.save_pickle(CONST.DATASET_PATH + CONST.ACTIVELEARNING_Y_PATH, Y)
