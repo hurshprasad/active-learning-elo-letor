@@ -9,7 +9,7 @@ We are comparing two LETOR models adaRank, and LambdaMart, and then observing an
 - Download pre-processed data from [this link](https://github.com/hurshprasad/information-retrieval-group/releases) file called ELO_ACTIVE_LEARNING_PRE_PROCESSED_DATA.zip  
 - place the zip file under your project directory under data/MQ2016/active_learning/pre_processed/  
 - run the python file active_learning/elo_active_learning.py  
-- we used pycharm (which setup the module paths)   
+- we used pycharm (which setup the module paths) [screen shot gif](https://github.com/hurshprasad/information-retrieval-group/RecordingWorkingELO.gif) 
 
 ### RankLib Models (AdaRank, LambdaMart)
 
