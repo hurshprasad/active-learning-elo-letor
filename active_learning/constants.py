@@ -33,6 +33,22 @@ class _Const(object):
         return "test.txt"
 
     @constant
+    def TEST_PATH():
+        return "pre_processed/test_data"
+
+    @constant
+    def TEST_PATH_LABELS():
+        return "pre_processed/test_data_labels"
+
+    @constant
+    def TEST_PATH_Q():
+        return "pre_processed/test_data_q"
+
+    @constant
+    def TEST_PATH_DOCS():
+        return "pre_processed/test_data_docs"
+
+    @constant
     def BASE2K_PATH():
         return "pre_processed/base2k"
 
@@ -90,11 +106,22 @@ class _Const(object):
 
     @constant
     def LEARNERS_N():
-        return {50,
-                100}  # estimator hyper_param for gradient boosting decision tree
+        return {100,
+                150,
+                200,
+                250}  # estimator hyper_param for gradient boosting decision tree
 
     @constant
     def M():
         return 500  # Number of top examples to move from U to L, if possible
+
+    @constant
+    def SAMPLE_TICKS():
+        return 16  # Number of 2^X where we sample DCG@10 starting from 9
+
+    @constant
+    def BASE_TESTS():
+        #return {CONST.BASE2K_PATH, CONST.BASE4K_PATH, CONST.BASE8K_PATH}
+        return {CONST.BASE2K_PATH}
 
 CONST = _Const()

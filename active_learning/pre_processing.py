@@ -47,7 +47,23 @@ def read_train_data(file):
     return np.array(X), np.array(Y), np.array(Q), np.array(docs)
 
 def read_test_data(file):
-    return read_train_data(file)
+
+    # assume if one is saved they all are
+    if util.check_file_exists(CONST.DATASET_PATH + CONST.TEST_PATH):
+        T_Data = util.load(CONST.DATASET_PATH + CONST.TEST_PATH)
+        T_Labels = util.load(CONST.DATASET_PATH + CONST.TEST_PATH_LABELS)
+        T_Queries = util.load(CONST.DATASET_PATH + CONST.TEST_PATH_Q)
+        T_Docs = util.load(CONST.DATASET_PATH + CONST.TEST_PATH_DOCS)
+
+    else:
+        T_Data, T_Labels, T_Queries, T_Docs = read_train_data(file)
+
+        util.save_pickle(CONST.DATASET_PATH + CONST.TEST_PATH, T_Data)
+        util.save_pickle(CONST.DATASET_PATH + CONST.TEST_PATH_LABELS, T_Labels)
+        util.save_pickle(CONST.DATASET_PATH + CONST.TEST_PATH_Q, T_Queries)
+        util.save_pickle(CONST.DATASET_PATH + CONST.TEST_PATH_DOCS, T_Docs)
+
+    return T_Data, T_Labels, T_Queries, T_Docs
 
 def main():
     # read the configuration file
