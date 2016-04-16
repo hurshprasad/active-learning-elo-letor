@@ -42,7 +42,9 @@ class ELO_ACTIVE_LEARNING(object):
 
         self.learner_estimator = None
 
-    # Algorithm 1
+    """
+    Get Expected Loss for all queries in U (Algorithm 1)
+    """
     def query_level_elo(self, basename):
 
         """
@@ -109,6 +111,9 @@ class ELO_ACTIVE_LEARNING(object):
 
         return bdcg
 
+    """
+    Get Expected Loss per for a given query
+    """
     def get_el_by_query(self, query, s_i_j):
 
         # get index's of all documents
@@ -127,6 +132,9 @@ class ELO_ACTIVE_LEARNING(object):
 
         return np.mean(d_i, axis=0) - np.sum(d, axis=0)
 
+    """
+    Get Expected Loss per document example for a given query (Algorithm 2)
+    """
     def document_level_elo_algorithm(self, query):
 
         # get j documents from L associated to query Q
@@ -175,10 +183,11 @@ class ELO_ACTIVE_LEARNING(object):
             bgcd_j = np.divide(np.mean(g_j, 0), np.log(1 + pi))
 
             el_j[j] = el_j[j] + np.mean(d_p) - bgcd_j
-            #el_j[j] = el_j[j] + bgcd_j + np.mean(d_p)
 
         return el_j, Xq_indicies[0]
-
+    """
+    Load Data from pre-processed pickle files
+    """
     def load_base_labels(self, base_path):
         self.L = None  # set base L sample set from main, 2K, 4K, 8K
         self.L_labels = None
@@ -197,6 +206,9 @@ class ELO_ACTIVE_LEARNING(object):
         self.L = util.load(CONST.DATASET_PATH + base_path)
         self.L_labels = util.load(CONST.DATASET_PATH + base_path + '_y')
 
+    """
+    predict on Test Set and calculate DCG@10
+    """
     def get_test_dcg_10(self):
         self.gbdt_params.__setitem__('n_estimators', 100)
         learner = ensemble.GradientBoostingRegressor(**self.gbdt_params)
@@ -228,6 +240,9 @@ class ELO_ACTIVE_LEARNING(object):
 
         return np.mean(dcg10)
 
+    """
+    perform ELO Active Learning per base set
+    """
     def perform_elo_active_learning(self, base_labeled):
 
         self.load_base_labels(base_labeled)
@@ -251,7 +266,7 @@ class ELO_ACTIVE_LEARNING(object):
                 range_size = sorted_el_j.shape[0] if sorted_el_j.shape[0] < CONST.M \
                     else CONST.M
 
-                # free for all query examples for L suck it U
+                # transfer selected examples from U to L
                 for index in range(0, range_size):
                     print "\rTransfering document", self.M_selected_examples + 1, "for query", query, "from U to L",
                     transfer = np.take(self.U, d_j[sorted_el_j[index]], 0)

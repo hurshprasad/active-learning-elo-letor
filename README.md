@@ -3,11 +3,13 @@ Project for UCL Information Retrieval 2016  Learning to Rank  (LETOR)
 
 We are comparing two LETOR models adaRank, and LambdaMart, and then observing another approach to LETOR called ELO Active Learning.
 
-## Run Models
+## How to Run the code
+
 ### Active Learning (ELO)
 - Download pre-processed data from [this link](https://github.com/hurshprasad/information-retrieval-group/releases) file called ELO_ACTIVE_LEARNING_PRE_PROCESSED_DATA.zip  
 - place the zip file under your project directory under data/MQ2016/active_learning/pre_processed/  
 - run the python file active_learning/elo_active_learning.py  
+- we used pycharm (which setup the module paths)   
 
 ### RankLib Models (AdaRank, LambdaMart)
 
@@ -51,13 +53,13 @@ $ java -jar bin/RankLib.jar -train ../data/MQ2016/base1024/Fold1/train.txt -test
 
 	.  
 	├── data 
-	|	 ├── MQ2016  					# segmented MQ2007 data
+	|	 ├── MQ2016  						# segmented MQ2007 data
 	|	 │   ├── S1.txt
 	|	 │   ├── S2.txt
 	|	 │   ├── S3.txt
 	|	 │   ├── S4.txt
 	|	 │   ├── S5.txt
-	|	 │   ├── base512				# segmented data
+	|	 │   ├── base512					# segmented data
 	|	 │   ├── base1024
 	|	 │   ├── base2048
 	|	 │   ├── base4096

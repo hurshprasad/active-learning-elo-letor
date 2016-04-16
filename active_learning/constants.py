@@ -113,7 +113,7 @@ class _Const(object):
 
     @constant
     def M():
-        return 500  # Number of top examples to move from U to L, if possible
+        return 1000  # Number of top examples to move from U to L, if possible
 
     @constant
     def SAMPLE_TICKS():
@@ -121,7 +121,6 @@ class _Const(object):
 
     @constant
     def BASE_TESTS():
-        #return {CONST.BASE2K_PATH, CONST.BASE4K_PATH, CONST.BASE8K_PATH}
-        return {CONST.BASE2K_PATH}
+        return {CONST.BASE2K_PATH, CONST.BASE4K_PATH, CONST.BASE8K_PATH}
 
 CONST = _Const()
