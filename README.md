@@ -11,7 +11,7 @@ We are comparing two LETOR models adaRank, and LambdaMart, and then observing an
 - place the zip file under your project directory under data/MQ2016/active_learning/pre_processed/ 
 - uses python sklearn machine learning library, numpy, and cPickle 
 - run the python file active_learning/elo_active_learning.py  
-- we used pycharm (which setup the module paths) [screen shot gif](https://github.com/hurshprasad/information-retrieval-group/blob/master/RecordingWorkingELO.gif) 
+- we used pycharm (which setup the module paths) [screen shot gif](https://raw.githubusercontent.com/hurshprasad/active-learning-elo-letor/master/RecordingWorkingELO.gif) 
 
 ### RankLib Models (AdaRank, LambdaMart)
 
