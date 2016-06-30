@@ -1,5 +1,6 @@
-# information-retrieval-group  
 Project for UCL Information Retrieval 2016  Learning to Rank  (LETOR)
+
+Implementation of [Active Learning for Ranking through Expected Loss Optimization](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.278.4557&rep=rep1&type=pdf)  
 
 We are comparing two LETOR models adaRank, and LambdaMart, and then observing another approach to LETOR called ELO Active Learning.
 
